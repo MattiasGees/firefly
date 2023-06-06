@@ -105,7 +105,7 @@ Client Authentication: JWKS
 URLs: http://jwt-this.example:8000/.well-known/jwks.json
 Service Accounts: Firefly Test
 
-// TODO: Add image
+![Configuration](images/configuration.png)
 
 ## Firefly
 
