@@ -1,0 +1,4 @@
+.DS_Store
+svc-acct-rsa-pub-key.pem
+svc-acct.key
+config.yaml

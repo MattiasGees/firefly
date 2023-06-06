@@ -1,0 +1,21 @@
+services:
+  jwt-this:
+    image: "mattiasgees/jwt-this:latest"
+    ports:
+      - "8000:8000"
+    command: --config-name "Demo Config" --policy-names "Demo Policy"
+  firefly:
+    image: "public.ecr.aws/venafi-images/firefly:latest"
+    ports:
+      - "8081:8081"
+      - "8123:8123"
+      - "8281:8281"
+    command: run -c /etc/firefly/config.yaml
+    volumes:
+      - .:/etc/firefly:ro
+    cap_add:
+      - IPC_LOCK
+    environment:
+      - ACCEPT_TERMS=Y
+    links:
+      - "jwt-this:jwt-this.example"
