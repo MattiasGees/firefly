@@ -98,12 +98,12 @@ When saving the Service Account, you will get a client-id, keep this client-id i
 
 The last step we have to do in the TLS Protect Cloud UI, is create a [configuration](https://docs.venafi.cloud/firefly/configurations/). Use the following config:
 
-Name: Demo Config
-Sub CA Provider: Firefly Test
-Policies: Demo Policy
-Client Authentication: JWKS
-URLs: http://jwt-this.example:8000/.well-known/jwks.json
-Service Accounts: Firefly Test
+* Name: Demo Config
+* Sub CA Provider: Firefly Test
+* Policies: Demo Policy
+* Client Authentication: JWKS
+* URLs: http://jwt-this.example:8000/.well-known/jwks.json
+* Service Accounts: Firefly Test
 
 ![Configuration](images/configuration.png)
 
