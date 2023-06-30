@@ -46,7 +46,7 @@ A [policy](https://docs.venafi.cloud/firefly/policies/) is required to determine
 * C: Locked with value `USA`
 * Key Constraint: `RSA 4096`, `RSA 3072`, `RSA 2048` as Required with a default value of `RSA 4096`
 * Key usage: `Digital Signature` and `Key Encipherment`
-* External Key Usage: `Server Authentication` and `Client Authentication`
+* Extended Key Usage: `Server Authentication` and `Client Authentication`
 
 ![Policy settings part 1](images/policy1.png)
 ![Policy settings part 2](images/policy2.png)
